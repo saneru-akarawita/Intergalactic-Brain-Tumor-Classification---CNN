@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './mixins';
+
+.default-container {
+
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(sm) {
+    width: 540px;
+  }
+
+  @include mq(md) {
+    width: 720px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  @include mq(lg) {
+    width: 960px;
+  }
+
+  @include mq(xl) {
+    width: 1140px;
+  }
+
+  @include mq("2xl") {
+    width: 1320px;
+  }
+}
